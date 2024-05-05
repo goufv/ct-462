@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Accordion FAQ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-bootstrap.png">
+</head>
+<body>
+  <div class="container-fluid">
+            
+    <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+      <div class="col-12 col-lg-8 col-xl-7 text-center mb-4">
+        <span class="text-muted">Content Type</span>
+        <h2 class="display-5 fw-bold mt-2 mb-3">Accordion FAQ with filters</h2>
+        <p class="lead text-muted">Each FAQ can belong to one or more categories</p>
+      </div>
+      <ul class="nav nav-pills justify-content-center">
+        <li class="nav-item"><a class="nav-link active" href="#" data-filter="all">All</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter="general">General</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter="payments">Payments</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter="returns">Returns</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter="refunds">Refunds</a></li>
+      </ul>
+      </div>
+      <div class="row">
+      <div class="col-12 col-lg-6 mx-auto">
+        <div class="accordion accordion-flush" id="faq01">
+        <div class="accordion-item" data-category="general, payments">
+          <h2 class="accordion-header" id="faq01-header1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq01-answer1" aria-expanded="false" aria-controls="faq01-answer1">Fusce eget nunc et libero accumsan rutrum quis nec lectus?</button>
+          </h2>
+          <div class="accordion-collapse collapse show" id="faq01-answer1" aria-labelledby="faq01-header1" data-bs-parent="#faq01">
+          <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod orci sed tristique placerat. Fusce in ligula urna. Fusce eget nunc et libero accumsan rutrum quis nec lectus. Quisque luctus sem nibh, quis ornare neque consectetur varius. Maecenas rhoncus consectetur rutrum.</div>
+          </div>
+        </div>
+        <div class="accordion-item" data-category="general">
+          <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq01-answer2" aria-expanded="false" aria-controls="faq01-answer2">
+            General Fusce eget nunc et libero accumsan rutrum quis nec lectus?</button>
+          </h2>
+          <div class="accordion-collapse collapse" id="faq01-answer2" aria-labelledby="faq01-header2" data-bs-parent="#faq01">
+          <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod orci sed tristique placerat. Fusce in ligula urna. Fusce eget nunc et libero accumsan rutrum quis nec lectus. Quisque luctus sem nibh, quis ornare neque consectetur varius. Maecenas rhoncus consectetur rutrum.</div>
+          </div>
+        </div>
+        <div class="accordion-item" data-category="payments">
+          <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq01-answer3" aria-expanded="false" aria-controls="faq01-answer3">Fusce eget nunc et libero accumsan rutrum quis nec lectus?</button>
+          </h2>
+          <div class="accordion-collapse collapse" id="faq01-answer3" aria-labelledby="faq01-header3" data-bs-parent="#faq01">
+          <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod orci sed tristique placerat. Fusce in ligula urna. Fusce eget nunc et libero accumsan rutrum quis nec lectus. Quisque luctus sem nibh, quis ornare neque consectetur varius. Maecenas rhoncus consectetur rutrum.</div>
+          </div>
+        </div>
+        <div class="accordion-item" data-category="returns">
+          <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq01-answer4" aria-expanded="false" aria-controls="faq01-answer4">Fusce eget nunc et libero accumsan rutrum quis nec lectus?</button>
+          </h2>
+          <div class="accordion-collapse collapse" id="ffaq01-answer4" aria-labelledby="faq01-header4" data-bs-parent="#faq01">
+          <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod orci sed tristique placerat. Fusce in ligula urna. Fusce eget nunc et libero accumsan rutrum quis nec lectus. Quisque luctus sem nibh, quis ornare neque consectetur varius. Maecenas rhoncus consectetur rutrum.</div>
+          </div>
+        </div>
+        <div class="accordion-item" data-category="refunds, payments">
+          <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq01-answer5" aria-expanded="false" aria-controls="faq01-answer5">
+            Refunds + Payments Fusce eget nunc et libero accumsan rutrum quis nec lectus?</button>
+          </h2>
+          <div class="accordion-collapse collapse" id="faq01-answer5" aria-labelledby="faq01-header5" data-bs-parent="#faq01">
+          <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod orci sed tristique placerat. Fusce in ligula urna. Fusce eget nunc et libero accumsan rutrum quis nec lectus. Quisque luctus sem nibh, quis ornare neque consectetur varius. Maecenas rhoncus consectetur rutrum.</div>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </section>
+  </div>
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script>
+// Get all the nav-pill items
+const navPills = document.querySelectorAll('.nav-link');
+
+// Add click event listeners to each nav-pill item
+navPills.forEach(navPill => {
+  navPill.addEventListener('click', () => {
+    const filter = navPill.getAttribute('data-filter');
+
+    // Show/hide accordion items based on the selected filter
+    const accordionItems = document.querySelectorAll('.accordion-item');
+    accordionItems.forEach(item => {
+      const categories = item.getAttribute('data-category').split(', ');
+      if (filter === 'all' || categories.includes(filter)) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+});
+   
+  </script>
+</body>
+</html>
