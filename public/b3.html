@@ -1,0 +1,447 @@
+<!--
+    Bootstrap 3 version for code
+
+    The HTML snippet you provided appears to be using Bootstrap 5 syntax, not Bootstrap 3. Here are some changes you would need to make for it to work with Bootstrap 3:
+
+Replace data-parent with data-parent.
+Replace data-toggle with data-toggle.
+Replace data-target with data-target.
+Bootstrap 3 does not support aria-labelledby attribute. You can remove it.
+Bootstrap 3 uses panel classes for accordion functionality. You would need to replace accordion-collapse, accordion-body, accordion-header, and accordion-button with appropriate Bootstrap 3 classes.
+Bootstrap 3 uses col-xs-*, col-sm-*, col-md-*, and col-lg-* for grid system. The col-* classes are not available in Bootstrap 3.
+Here's a simplified example of how an accordion item might look in Bootstrap 3:
+
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading" id="faq01-header02">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#faq01-answer2">
+          Course Example (02)
+        </a>
+      </h4>
+    </div>
+    <div id="faq01-answer2" class="panel-collapse collapse">
+      <div class="panel-body">
+      Content here
+    </div>
+</div>
+</div>
+</div>
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>t4 Content Type - Student Listing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="https://ufv.ca/favicon.ico">
+  <STYLE>
+    .section
+    {
+      margin: 30px 0;
+    }
+  </STYLE>
+</head>
+<body>
+  <div class="container-fluid">
+    <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+      <div class="col-12 col-lg-8 col-xl-7 text-center mb-4">
+        <span class="text-muted">Content Type 462</span>
+        <h2 class="display-5 fw-bold mt-2 mb-3">Student Service Listing</h2>
+        <p class="lead text-muted">Each FAQ can belong to one or more categories</p>
+      </div>
+      <ul class="nav nav-pills justify-content-center">
+        <li class="nav-item"><a class="nav-link active" href="#" data-filter="all">All</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter="program">Program planning</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter="course">Course registration</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter="learning">Learning support</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter="health">Health & wellness</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter="financial">Financial support & advice</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter="safety">Safety & crisis support</a></li>
+      </ul>
+      </div>
+      <div class="row">
+        <!--
+  ************************************************************************************************
+  SECTION
+  ************************************************************************************************
+-->
+      <div class="col-12 col-lg-10 mx-auto program-planning section">
+        <h2>Program-planning</h2>
+
+
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading" id="faq01-header02">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#faq01-answer2">
+                    Course Example (02)
+                  </a>
+                </h4>
+              </div>
+              <div id="faq01-answer2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <!-- Your content here -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading" id="faq01-header02">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#faq01-answer2">
+                    Course Example (02)
+                  </a>
+                </h4>
+              </div>
+              <div id="faq01-answer2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <!-- Your content here -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        <div class="accordion accordion-flush" id="faq01">
+          <!-- item 01 -->
+          <div class="accordion-item" data-category="program">
+          <h2 class="accordion-header" id="faq01-header01">
+          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#faq01-answer1" aria-expanded="false" aria-controls="faq01-answer1">
+            Academic Advising
+          </button>
+          </h2>
+          <div class="accordion-collapse collapse" id="faq01-answer1" aria-labelledby="faq01-header1" data-parent="#faq01">
+          <div class="accordion-body">
+            <div class="row">
+              <div class="col-lg-6 462-col-left">
+                If you need:
+                <ul>
+                  <li>Help with program planning</li>
+                  <li>Assistance with course registration</li>
+                  <li>Support with learning</li>
+                  <li>Advice on financial support</li>
+                  <li>Help with health and wellness</li>
+                  <li>Support with safety and crisis</li>
+                </ul>
+                <button type="button" class="btn btn-primary">Academic Advising Website</button>
+              </div>
+              <div class="col-lg-6 462-col-right">
+                <!-- Locations -->
+                <div class="row">
+                    <div class="col-6">Service locations:</div>
+                  <div class="col-6">Abbotsford, Chilliwack</div>
+                </div>
+                <!-- We also do -->
+                <div class="row">
+                  <div class="col-6">We also do:</div>
+                <div class="col-6">Video phone calls</div>
+                  <!-- Get started -->
+                <div class="row">
+                  <div class="col-6">How to get started:</div>
+                <div class="col-6">
+                  <ul>
+                    <li><a href="https://www.advising">Book an appointment</a></li>
+                    <li>Email: <a href="mailto:advising@ufv.ca">advising@ufv.ca</a></li>
+                    <li>Phone: <a href="tel:5042341233">604-234-5055</a></li>
+                  </ul>
+                  </div>
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- /item -->
+        <!-- item 02 -->
+        <div class="accordion-item" data-category="course">
+          <h2 class="accordion-header" id="faq01-header02">
+          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#faq01-answer2" aria-expanded="false" aria-controls="faq01-answer2">
+            Course Example (02)
+          </button>
+          </h2>
+          <div class="accordion-collapse collapse" id="faq01-answer2" aria-labelledby="faq01-header2" data-parent="#faq01">
+          <div class="accordion-body">
+            <div class="row">
+              <div class="col-lg-6 462-col-left">
+                If you need:
+                <ul>
+                  <li>Help with program planning</li>
+                  <li>Assistance with course registration</li>
+                  <li>Support with learning</li>
+                  <li>Advice on financial support</li>
+                  <li>Help with health and wellness</li>
+                  <li>Support with safety and crisis</li>
+                </ul>
+                <button type="button" class="btn btn-primary">Academic Advising Website</button>
+              </div>
+              <div class="col-lg-6 462-col-right">
+                <!-- Locations -->
+                <div class="row">
+                    <div class="col-6">Service locations:</div>
+                  <div class="col-6">Abbotsford, Chilliwack</div>
+                </div>
+                <!-- We also do -->
+                <div class="row">
+                  <div class="col-6">We also do:</div>
+                <div class="col-6">Video phone calls</div>
+                  <!-- Get started -->
+                <div class="row">
+                  <div class="col-6">How to get started:</div>
+                <div class="col-6">
+                  <ul>
+                    <li><a href="https://www.advising">Book an appointment</a></li>
+                    <li>Email: <a href="mailto:advising@ufv.ca">advising@ufv.ca</a></li>
+                    <li>Phone: <a href="tel:5042341233">604-234-5055</a></li>
+                  </ul>
+                  </div>
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /item -->
+      </div>
+          <!-- item 03 -->
+          <div class="accordion-item" data-category="course">
+            <h2 class="accordion-header" id="faq01-header02">
+            <button class="accordion-button" type="button" data-toggle="collapse" data-target="#faq01-answer3" aria-expanded="false" aria-controls="faq01-answer3">
+              Marketing services (03)
+            </button>
+            </h2>
+            <div class="accordion-collapse collapse" id="faq01-answer3" aria-labelledby="faq01-header3" data-parent="#faq01">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-lg-6 462-col-left">
+                  If you need:
+                  <ul>
+                    <li>Help with program planning</li>
+                    <li>Assistance with course registration</li>
+                    <li>Support with learning</li>
+                  </ul>
+                  <button type="button" class="btn btn-primary">Marketing Services</button>
+                </div>
+                <div class="col-lg-6 462-col-right">
+                  <!-- Locations -->
+                  <div class="row">
+                      <div class="col-6">Service locations:</div>
+                    <div class="col-6">Abbotsford, Chilliwack</div>
+                  </div>
+                  <!-- We also do -->
+                  <div class="row">
+                    <div class="col-6">We also do:</div>
+                  <div class="col-6">Video phone calls</div>
+                    <!-- Get started -->
+                  <div class="row">
+                    <div class="col-6">How to get started:</div>
+                  <div class="col-6">
+                    <ul>
+                      <li><a href="https://www.advising">Book an appointment</a></li>
+                      <li>Email: <a href="mailto:advising@ufv.ca">advising@ufv.ca</a></li>
+                      <li>Phone: <a href="tel:5042341233">604-234-5055</a></li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /item -->
+        </div>
+      </div>
+    </div>
+<!--
+  ************************************************************************************************
+  SECTION
+  ************************************************************************************************
+-->
+    <div class="col-12 col-lg-10 mx-auto program-planning section">
+      <h2>Course Registration</h2>
+      <div class="accordion accordion-flush" id="faq011">
+        <!-- item 01 -->
+        <div class="accordion-item" data-category="program">
+        <h2 class="accordion-header" id="faq011-header01">
+        <button class="accordion-button" type="button" data-toggle="collapse" data-target="#faq011-answer1" aria-expanded="false" aria-controls="faq01-answer1">
+          Academic Success Centre
+        </button>
+        </h2>
+        <div class="accordion-collapse collapse" id="faq011-answer1" aria-labelledby="faq011-header1" data-parent="#faq011">
+        <div class="accordion-body">
+          <div class="row">
+            <div class="col-lg-6 462-col-left">
+              If you need:
+              <ul>
+                <li>Help with program planning</li>
+                <li>Assistance with course registration</li>
+                <li>Support with learning</li>
+                <li>Advice on financial support</li>
+                <li>Help with health and wellness</li>
+                <li>Support with safety and crisis</li>
+              </ul>
+              <button type="button" class="btn btn-primary">Academic Advising Website</button>
+            </div>
+            <div class="col-lg-6 462-col-right">
+              <!-- Locations -->
+              <div class="row">
+                  <div class="col-6">Service locations:</div>
+                <div class="col-6">Abbotsford, Chilliwack</div>
+              </div>
+              <!-- We also do -->
+              <div class="row">
+                <div class="col-6">We also do:</div>
+              <div class="col-6">Video phone calls</div>
+                <!-- Get started -->
+              <div class="row">
+                <div class="col-6">How to get started:</div>
+              <div class="col-6">
+                <ul>
+                  <li><a href="https://www.advising">Book an appointment</a></li>
+                  <li>Email: <a href="mailto:advising@ufv.ca">advising@ufv.ca</a></li>
+                  <li>Phone: <a href="tel:5042341233">604-234-5055</a></li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- /item -->
+      <!-- item 02 -->
+      <div class="accordion-item" data-category="course">
+        <h2 class="accordion-header" id="faq01-header02">
+        <button class="accordion-button" type="button" data-toggle="collapse" data-target="#faq01-answer2" aria-expanded="false" aria-controls="faq01-answer2">
+          Course Example (02)
+        </button>
+        </h2>
+        <div class="accordion-collapse collapse" id="faq01-answer2" aria-labelledby="faq01-header2" data-parent="#faq01">
+        <div class="accordion-body">
+          <div class="row">
+            <div class="col-lg-6 462-col-left">
+              If you need:
+              <ul>
+                <li>Help with program planning</li>
+                <li>Assistance with course registration</li>
+                <li>Support with learning</li>
+                <li>Advice on financial support</li>
+                <li>Help with health and wellness</li>
+                <li>Support with safety and crisis</li>
+              </ul>
+              <button type="button" class="btn btn-primary">Academic Advising Website</button>
+            </div>
+            <div class="col-lg-6 462-col-right">
+              <!-- Locations -->
+              <div class="row">
+                  <div class="col-6">Service locations:</div>
+                <div class="col-6">Abbotsford, Chilliwack</div>
+              </div>
+              <!-- We also do -->
+              <div class="row">
+                <div class="col-6">We also do:</div>
+              <div class="col-6">Video phone calls</div>
+                <!-- Get started -->
+              <div class="row">
+                <div class="col-6">How to get started:</div>
+              <div class="col-6">
+                <ul>
+                  <li><a href="https://www.advising">Book an appointment</a></li>
+                  <li>Email: <a href="mailto:advising@ufv.ca">advising@ufv.ca</a></li>
+                  <li>Phone: <a href="tel:5042341233">604-234-5055</a></li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /item -->
+    </div>
+        <!-- item 03 -->
+        <div class="accordion-item" data-category="course">
+          <h2 class="accordion-header" id="faq01-header02">
+          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#faq01-answer3" aria-expanded="false" aria-controls="faq01-answer3">
+            Marketing services (03)
+          </button>
+          </h2>
+          <div class="accordion-collapse collapse" id="faq01-answer3" aria-labelledby="faq01-header3" data-parent="#faq01">
+          <div class="accordion-body">
+            <div class="row">
+              <div class="col-lg-6 462-col-left">
+                If you need:
+                <ul>
+                  <li>Help with program planning</li>
+                  <li>Assistance with course registration</li>
+                  <li>Support with learning</li>
+                </ul>
+                <button type="button" class="btn btn-primary">Marketing Services</button>
+              </div>
+              <div class="col-lg-6 462-col-right">
+                <!-- Locations -->
+                <div class="row">
+                    <div class="col-6">Service locations:</div>
+                  <div class="col-6">Abbotsford, Chilliwack</div>
+                </div>
+                <!-- We also do -->
+                <div class="row">
+                  <div class="col-6">We also do:</div>
+                <div class="col-6">Video phone calls</div>
+                  <!-- Get started -->
+                <div class="row">
+                  <div class="col-6">How to get started:</div>
+                <div class="col-6">
+                  <ul>
+                    <li><a href="https://www.advising">Book an appointment</a></li>
+                    <li>Email: <a href="mailto:advising@ufv.ca">advising@ufv.ca</a></li>
+                    <li>Phone: <a href="tel:5042341233">604-234-5055</a></li>
+                  </ul>
+                  </div>
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /item -->
+      </div>
+    </div>
+  </div>
+    </section>
+  </div>
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script>
+// Get all the nav-pill items
+const navPills = document.querySelectorAll('.nav-link');
+// Add click event listeners to each nav-pill item
+navPills.forEach(navPill => {
+  navPill.addEventListener('click', () => {
+    const filter = navPill.getAttribute('data-filter');
+    // Show/hide accordion items based on the selected filter
+    const accordionItems = document.querySelectorAll('.accordion-item');
+    accordionItems.forEach(item => {
+      const categories = item.getAttribute('data-category').split(', ');
+      if (filter === 'all' || categories.includes(filter)) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+});
+  </script>
+</body>
+</html>
