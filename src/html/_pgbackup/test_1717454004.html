@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>.btn-group { margin: 20px 0px; } .btn { margin: 10px; } /* plus glyph for showing collapsible panels */.panel-heading .accordion-plus-toggle:before { font-family: FontAwesome; content: "\f068"; float: right; color: silver; } .panel-heading .accordion-plus-toggle.collapsed:before { content: "\f067"; color: silver; } /* arrow glyph for showing collapsible panels */.panel-heading .accordion-arrow-toggle:before { font-family: FontAwesome; content: "\f078"; float: right; color: silver; } .panel-heading .accordion-arrow-toggle.collapsed:before { content: "\f054"; color: silver; } /* sets the link to the width of the entire panel title */.panel-title > a { display: block; } section { border: 1px solid #ccc; margin: 10px; padding: 30px; } section h2 { margin-bottom: 30px; font-size: 1.8em; letter-spacing: -1px; }</style>
+</head>
+<body>
+
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary active">
+            <input type="radio" name="filter" value="all" checked> All
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="filter" value="program">Program Planning
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="filter" value="course">Course Registration
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="filter" value="learning"> Learning Support
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="filter" value="health"> Health & wellness
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="filter" value="financial"> Financial support & advice
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="filter" value="safety"> Safety & crisis support
+        </label>
+    </div>
+
+
+    <div class="panel-group" id="accordion-3421895" role="tablist" aria-multiselectable="false">
+        <div class="panel panel-default" data-filter="program">
+            <div class="panel-heading" role="tab" id="heading-123">
+                <h2 class="panel-title"> <a role="button" data-toggle="collapse" class="accordion-toggle accordion-arrow-toggle collapsed" data-parent="#accordion-3421895" href="#collapse-4584921" aria-expanded="false" aria-controls="collapse-4584921">
+Academic Advising</a> </h2>
+            </div>
+            <div id="collapse-4584921" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-123">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-6 462-col-left">
+                            If you need:
+                            <ul>
+                                <li>Help with program planning</li>
+                                <li>Assistance with course registration</li>
+                                <li>Support with learning</li>
+                                <li>Advice on financial support</li>
+                                <li>Help with health and wellness</li>
+                                <li>Support with safety and crisis</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary">Academic Advising Website</button>
+                        </div>
+                        <div class="col-sm-6 462-col-right">
+                            <!-- Locations -->
+                            <div class="row">
+                                <div class="col-sm-6">Service locations:</div>
+                                <div class="col-sm-6">Abbotsford, Chilliwack</div>
+                            </div>
+                            <!-- We also do -->
+                            <div class="row">
+                                <div class="col-sm-6">We also do:</div>
+                                <div class="col-sm-6">Video phone calls</div>
+                            </div>                                         
+                            <!-- Get started -->
+                            <div class="row">
+                                <div class="col-sm-6">How to get started:</div>
+                                <div class="col-sm-6">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.advising">Book an appointment</a>
+                                        </li>
+                                        <li>Email: <a href="mailto:advising@ufv.ca">advising@ufv.ca</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <style>.btn-group { margin: 20px 0px; } .btn { margin: 10px; } /* plus glyph for showing collapsible panels */.panel-heading .accordion-plus-toggle:before { font-family: FontAwesome; content: "\f068"; float: right; color: silver; } .panel-heading .accordion-plus-toggle.collapsed:before { content: "\f067"; color: silver; } /* arrow glyph for showing collapsible panels */.panel-heading .accordion-arrow-toggle:before { font-family: FontAwesome; content: "\f078"; float: right; color: silver; } .panel-heading .accordion-arrow-toggle.collapsed:before { content: "\f054"; color: silver; } /* sets the link to the width of the entire panel title */.panel-title > a { display: block; } section { border: 1px solid #ccc; margin: 10px; padding: 30px; } section h2 { margin-bottom: 30px; font-size: 1.8em; letter-spacing: -1px; }
+        
+
+        </style>
+    </head>
+    <body>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+                <input type="radio" name="filter" value="all" checked> All
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="filter" value="program">Program Planning
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="filter" value="course">Course Registration
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="filter" value="learning"> Learning Support
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="filter" value="health"> Health & wellness
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="filter" value="financial"> Financial support & advice
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="filter" value="safety"> Safety & crisis support
+            </label>
+        </div>
+        <!-- 
+        Panel Group 101
+        unique: 
+        - u-101, 
+        - u-col-101
+        - heading-u-101
+        -->
+        <section id="program-section" class="panel panel-default" data-filter="program">
+            <h3>Program</h3>
+
+
+            
+            <div role="tablist" id="heading-unique-section" class="panel-heading">
+                <h2 class="panel-title"> <a role="button" data-toggle="collapse" class="accordion-toggle accordion-arrow-toggle collapsed" data-parent="#accordion-u-101" href="#collapse-unique-section" aria-expanded="false" aria-controls="collapse-unique-section">
+                Unique Section </a> </h2>
+            </div>
+            <div id="collapse-unique-section" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-unique-section">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-6 462-col-left">
+                            If you need:
+                            <ul>
+                                <li>Help with program planning</li>
+                                <li>Assistance with course registration</li>
+                                <li>Support with learning</li>
+                                <li>Advice on financial support</li>
+                                <li>Help with health and wellness</li>
+                                <li>Support with safety and crisis</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary">Academic Advising Website</button>
+                        </div>
+                        <div class="col-sm-6 462-col-right">
+                            <!-- Locations -->
+                            <div class="row">
+                                <div class="col-sm-6">Service locations:</div>
+                                <div class="col-sm-6">Abbotsford, Chilliwack</div>
+                            </div>
+                            <!-- We also do -->
+                            <div class="row">
+                                <div class="col-sm-6">We also do:</div>
+                                <div class="col-sm-6">Video phone calls</div>
+                            </div>                             
+                            <!-- Get started -->
+                            <div class="row">
+                                <div class="col-sm-6">How to get started:</div>
+                                <div class="col-sm-6">
+                                    <ul>
+                                        <li><a href="https://www.advising">Book an appointment</a>
+                                        </li>
+                                        <li>Email: <a href="mailto:advising@ufv.ca">advising@ufv.ca</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-heading" role="tablist" id="heading-unique-section-02">
+                <h2 class="panel-title"> <a role="button" data-toggle="collapse" class="accordion-toggle accordion-arrow-toggle collapsed" data-parent="#accordion-u-101" href="#collapse-unique-section-02" aria-expanded="false" aria-controls="collapse-unique-section">
+                Unique Section 02 </a> </h2>
+            </div>
+            <div id="collapse-unique-section-02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-unique-section-02">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-6 462-col-left">
+                            If you need:
+                            <ul>
+                                <li>Help with program planning</li>
+                                <li>Assistance with course registration</li>
+                                <li>Support with learning</li>
+                                <li>Advice on financial support</li>
+                                <li>Help with health and wellness</li>
+                                <li>Support with safety and crisis</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary">Academic Advising Website</button>
+                        </div>
+                        <div class="col-sm-6 462-col-right">
+                            <!-- Locations -->
+                            <div class="row">
+                                <div class="col-sm-6">Service locations:</div>
+                                <div class="col-sm-6">Abbotsford, Chilliwack</div>
+                            </div>
+                            <!-- We also do -->
+                            <div class="row">
+                                <div class="col-sm-6">We also do:</div>
+                                <div class="col-sm-6">Video phone calls</div>
+                            </div>                             
+                            <!-- Get started -->
+                            <div class="row">
+                                <div class="col-sm-6">How to get started:</div>
+                                <div class="col-sm-6">
+                                    <ul>
+                                        <li><a href="https://www.advising">Book an appointment</a>
+                                        </li>
+                                        <li>Email: <a href="mailto:advising@ufv.ca">advising@ufv.ca</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="course-section" class="panel panel-default" data-filter="course">
+            <h3>Course</h3>
+            <!-- 101 -->
+            <div class="panel-group" id="accordion-u-101" role="tablist" aria-multiselectable="false">
+                <div class="panel panel-default" data-filter="course">
+                    <div class="panel-heading" role="tab" id="heading-u-101">
+                        <h2 class="panel-title"> 
+                            <a role="button" data-toggle="collapse" 
+                            class="accordion-toggle accordion-arrow-toggle collapsed" data-parent="#accordion-u-101" 
+                            href="#collapse-u-col-101" aria-expanded="false" 
+                            aria-controls="collapse-u-col-101">Course 101</a> 
+                        </h2>
+                    </div>
+                    <div id="collapse-u-col-101" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-u-101">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-6 462-col-left">
+                                    If you need:
+                                    <ul>
+                                        <li>Help with program planning</li>
+                                        <li>Assistance with course registration</li>
+                                        <li>Support with learning</li>
+                                        <li>Advice on financial support</li>
+                                        <li>Help with health and wellness</li>
+                                        <li>Support with safety and crisis</li>
+                                    </ul>
+                                    <button type="button" class="btn btn-primary">Academic Advising Website</button>
+                                </div>
+                                <div class="col-sm-6 462-col-right">
+                                    <!-- Locations -->
+                                    <div class="row">
+                                        <div class="col-sm-6">Service locations:</div>
+                                        <div class="col-sm-6">Abbotsford, Chilliwack</div>
+                                    </div>
+                                    <!-- We also do -->
+                                    <div class="row">
+                                        <div class="col-sm-6">We also do:</div>
+                                        <div class="col-sm-6">Video phone calls</div>
+                                    </div>                                     
+                                    <!-- Get started -->
+                                    <div class="row">
+                                        <div class="col-sm-6">How to get started:</div>
+                                        <div class="col-sm-6">
+                                            <ul>
+                                                <li><a href="https://www.advising">Book an appointment</a>
+                                                </li>
+                                                <li>Email: <a href="mailto:advising@ufv.ca">advising@ufv.ca</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 101 -->
+            <!-- 102 -->
+            <div class="panel-group" id="accordion-u-102" role="tablist" aria-multiselectable="false">
+                <div class="panel panel-default" data-filter="course">
+                    <div class="panel-heading" role="tab" id="heading-u-102">
+                        <h2 class="panel-title"> <a role="button" data-toggle="collapse" class="accordion-toggle accordion-arrow-toggle collapsed" data-parent="#accordion-u-102" href="#collapse-u-col-102" aria-expanded="false" aria-controls="collapse-u-col-102">
+Course 102</a> </h2>
+                    </div>
+                    <div id="collapse-u-col-102" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-u-102">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-6 462-col-left">
+                                    If you need:
+                                    <ul>
+                                        <li>Help with program planning</li>
+                                        <li>Assistance with course registration</li>
+                                        <li>Support with learning</li>
+                                        <li>Advice on financial support</li>
+                                        <li>Help with health and wellness</li>
+                                        <li>Support with safety and crisis</li>
+                                    </ul>
+                                    <button type="button" class="btn btn-primary">Academic Advising Website</button>
+                                </div>
+                                <div class="col-sm-6 462-col-right">
+                                    <!-- Locations -->
+                                    <div class="row">
+                                        <div class="col-sm-6">Service locations:</div>
+                                        <div class="col-sm-6">Abbotsford, Chilliwack</div>
+                                    </div>
+                                    <!-- We also do -->
+                                    <div class="row">
+                                        <div class="col-sm-6">We also do:</div>
+                                        <div class="col-sm-6">Video phone calls</div>
+                                    </div>                                     
+                                    <!-- Get started -->
+                                    <div class="row">
+                                        <div class="col-sm-6">How to get started:</div>
+                                        <div class="col-sm-6">
+                                            <ul>
+                                                <li><a href="https://www.advising">Book an appointment</a>
+                                                </li>
+                                                <li>Email: <a href="mailto:advising@ufv.ca">advising@ufv.ca</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 102 -->
+        </section>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function() {
+            $('input[name="filter"]').change(function() {
+              var filter = $(this).val();
+              if (filter === 'all') {
+                $('.panel').show();
+              } else {
+                $('.panel').hide();
+                $('.panel').each(function() {
+                  var filters = $(this).data('filter').split(', ');
+                  if (filters.includes(filter)) {
+                    $(this).show();
+                  }
+                });
+              }
+            });
+          });
+    </script>
+    </body>
+</html>
