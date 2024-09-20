@@ -1,0 +1,183 @@
+<SCRIPT>
+    const service-listing-data = [
+    { 
+      "id": <t4 type="meta" meta="content_id" />,
+      "username": "<t4 type="meta" meta="last_modified_by_username" name="Name" />",
+      "version": "<t4 type="meta" meta="version" name="Name" />",
+      "updated": "<t4 type="meta" meta="last_modified" format="MM/dd/yyyy" /> - <t4 type="meta" meta="recently_modified" name="Name" />",
+      "name": "<t4 type="content" name="Name" output="normal" modifiers="htmlentities,js-var" />", 
+        "data-filter": "<t4 type="content" name="data-filter" output="normal" modifiers="striptags,htmlentities" />",
+      "service-list-1": "<t4 type="content" name="Service list 01" output="normal" modifiers="striptags,htmlentities" />",
+      "service-list-2": "<t4 type="content" name="Service list 02" output="normal" modifiers="striptags,htmlentities" />",
+      "service-list-3": "<t4 type="content" name="Service list 03" output="normal" modifiers="striptags,htmlentities" />",
+      "location": "<t4 type="content" name="Location" output="normal" display_field="value" />",
+        "location-1": "<t4 type="content" name="Location 1" output="normal" modifiers="striptags,htmlentities" />",
+      "location-2": "<t4 type="content" name="Location 2" output="normal" modifiers="striptags,htmlentities" />",
+      "location-3": "<t4 type="content" name="Location 3" output="normal" modifiers="striptags,htmlentities" />",
+      "CTA Text": "<t4 type="content" name="CTA Text" output="normal" modifiers="striptags,htmlentities" />",
+      "CTA URL Section":"<t4 type="content" name="CTA URL Section" output="normal" modifiers="nav_sections" />",
+      "CTA URL":"<t4 type="content" name="CTA URL" output="normal" modifiers="striptags,htmlentities" />",
+      "email":"<t4 type="content" name="Email" output="normal" modifiers="striptags,htmlentities" />",
+      "phone-number": "<t4 type="content" name="Phone Number" output="normal" modifiers="striptags,htmlentities" />",
+      "website-name":"<t4 type="content" name="Website name" output="normal" modifiers="striptags,htmlentities" />",
+        "website-url": "<t4 type="content" name="Website URL" output="normal" />",
+        "website-url-section": "<t4 type="content" name="Website URL Section" output="normal" modifiers="nav_sections" />",
+      "website-url-section-normal": "<t4 type="content" name="Website URL Section" output="normal" />",
+      "website-url-section-link": "<t4 type="content" name="Website URL Section" output="linkurl" modifiers="nav_sections" />",
+        "virtual":"<t4 type="content" name="Virtual" output="normal" display_field="value" />"
+    }
+    ];
+  </SCRIPT>    
+  <div class="panel-group ct-462-panel" 
+       id="accordion-u-<t4 type="meta" meta="content_id" />" 
+       role="tablist" 
+       aria-multiselectable="false">
+                  <div class="panel panel-default" 
+                       data-filter="<t4 type="content" name="data-filter" output="normal" modifiers="striptags,htmlentities" />" 
+                       data-keywords="<t4 type="content" name="data-filter" output="normal" modifiers="striptags,htmlentities" />">
+                      <div class="panel-heading" role="tab" id="heading-u-<t4 type="meta" meta="content_id" />">
+                          <h2 class="panel-title"> 
+                            <a role="button" 
+                               data-toggle="collapse" 
+                               class="accordion-toggle accordion-arrow-toggle collapsed" 
+                               data-parent="#accordion-u-<t4 type="meta" meta="content_id" />" 
+                               href="#collapse-u-col-<t4 type="meta" meta="content_id" />" 
+                               aria-expanded="false" 
+                               aria-controls="collapse-u-col-<t4 type="meta" meta="content_id" />"
+                               tabindex="0" >
+                              <t4 type="content" name="Name" output="normal" />
+                            </a> 
+                        </h2>
+                      </div>
+                      <div id="collapse-u-col-<t4 type="meta" meta="content_id" />" 
+                           class="panel-collapse collapse" 
+                           role="tabpanel" 
+                           aria-labelledby="heading-u-<t4 type="meta" meta="content_id" />" 
+                           style="" 
+                           aria-expanded="false">
+                          <div class="panel-body">
+                              <div class="row">
+                                  <div class="col-sm-7 ct-462-col-left">
+                                     <ul>
+                                       <li><t4 type="content" name="Service list 01" output="normal" /></li>
+                                       <li><t4 type="content" name="Service list 02" output="normal" /></li>
+  <t4 type="content" name="Service list 03" output="selective-output" modifiers="" process-format="true" format="<li><t4 type=&quot;content&quot; name=&quot;Service list 03&quot; output=&quot;normal&quot; /></li>" />
+                                    </ul>
+                                    <!--
+  <a href="<t4 type="content" name="Website URL" output="normal" />">
+  <button type="button" class="btn btn-primary">
+  <t4 type="content" name="Website name" output="normal" />
+  </button>
+  </a>
+  -->                                  
+  <t4 type="content" 
+      name="Website URL Section" 
+      output="selective-output" 
+      modifiers="nav_sections" 
+      process-format="true" 
+      format="<!-- Website URL Section --><a class=&quot;btn-462 btn btn-primary&quot; href=&quot;<t4 type=&quot;content&quot; name=&quot;Website URL Section&quot; output=&quot;linkurl&quot; modifiers=&quot;nav_sections&quot; />&quot;>
+  <t4 type=&quot;content&quot; name=&quot;Website name&quot; output=&quot;normal&quot; />
+  </a>" />                                  
+  
+  <t4 type="content" 
+      name="Website URL" 
+      output="selective-output" 
+      modifiers="nav_sections" 
+      process-format="true" 
+      format="<!-- Website external URL --><a class=&quot;btn-462 btn btn-primary &quot; href=&quot;<t4 type=&quot;content&quot; name=&quot;Website URL&quot; output=&quot;normal&quot; modifiers=&quot;nav_sections&quot; />&quot;>
+  <t4 type=&quot;content&quot; name=&quot;Website name&quot; output=&quot;normal&quot; />
+  </a>" />                                  
+                                </div>
+                                  <div class="col-sm-5 ct-462-col-right">
+  
+  <!-- Locations -->
+  
+  <t4 type="content" name="Location 1" output="selective-output" format="<div class=&quot;row&quot;><div class=&quot;col-sm-5&quot;>" />
+                                    
+  <t4 type="content" name="Location 1" output="selective-output" format="<strong>Locations:</strong>" />
+                                    
+  <t4 type="content" name="Location 1" output="selective-output" format="</div><div class=&quot;col-sm-7&quot;>" />
+  
+  <t4 type="content" name="Location 1" output="selective-output" format="<p>$value</p>" />
+  <t4 type="content" name="Location 2" output="selective-output" format="<p>$value</p>" />
+  <t4 type="content" name="Location 3" output="selective-output" format="<p>$value</p>" />
+  <!-- hours section or content link -->
+                                    
+  <t4 type="content" name="Hours page link" output="selective-output" modifiers="nav_sections" process-format="true" format="<p class=&quot;hrs&quot;>$value</p>" />
+                                    
+   
+  <t4 type="content" name="Location 1" output="selective-output" format="</div></div>" />
+  
+  <!-- We also do -->
+  <div class="row">
+                                            <!-- virtual options -->
+  <div class="col-sm-5"><t4 type="content" name="Virtual" output="selective-output" format="<strong>We also do:</strong>" /></div>
+  <div class="col-sm-7"><t4 type="content" name="Virtual" output="normal" display_field="value" /></div>
+  </div>                                     
+                                      <!-- Get started -->
+                                      <div class="row">
+                                        <div class="col-sm-5"><strong>How to get started:</strong></div>
+                                          <div class="col-sm-7">
+                                            <t4 type="content" name="CTA Message" output="selective-output" modifiers="striptags" format="$value<br/>" />
+                                                 <a href="<t4 type="content" name="CTA URL" output="normal" modifiers="striptags,htmlentities" />">
+                                                        <t4 type="content" name="CTA Text" output="normal" />
+                                                    </a>
+                                                  <br/>
+  
+                                            
+                                            <!-- selective -->
+                                            <t4 type="content" name="Email" output="selective-output" process-format="true" format="Email: <a href=&quot;mailto:<t4 type=&quot;content&quot; name=&quot;Email&quot; output=&quot;normal&quot; modifiers=&quot;striptags,htmlentities&quot; />&quot;><t4 type=&quot;content&quot; name=&quot;Email&quot; output=&quot;normal&quot; modifiers=&quot;striptags,htmlentities&quot; /></a><br/>" />
+  <t4 type="content" name="Phone Number" output="selective-output" process-format="true" format="Phone: <a href=&quot;tel:<t4 type=&quot;content&quot; name=&quot;Phone Number&quot; output=&quot;normal&quot; modifiers=&quot;striptags,htmlentities&quot; />&quot;><t4 type=&quot;content&quot; name=&quot;Phone Number&quot; output=&quot;normal&quot; modifiers=&quot;striptags,htmlentities&quot; /></a><br/>" />                                          
+  <!-- 
+  normal:
+  Email: <a href="mailto:<t4 type="content" name="Email" output="normal" modifiers="striptags,htmlentities" />"><t4 type="content" name="Email" output="normal" modifiers="striptags,htmlentities" /></a><br/>
+  Phone: <a href="tel:<t4 type="content" name="Phone Number" output="normal" modifiers="striptags,htmlentities" />"><t4 type="content" name="Phone Number" output="normal" modifiers="striptags,htmlentities" /></a>
+  -->
+  
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  <SCRIPT>
+      const serviceListingDataJson = JSON.stringify(service_listing_data);
+  </SCRIPT>
+  <STYLE>
+  .panel-body a { font-weight: 600; color: #00703c;}
+    
+  .ct-462-panel .ct-462-col-right a{text-decoration:underline;color:#00703c}
+  .ct-462-panel .ct-462-col-right a:hover,.ct-462-panel .ct-462-col-right a:focus{outline:2px solid #00703c;outline-offset:2px;text-decoration:underline;color:#004d1a}
+  .ct-462-panel .ct-462-col-right a:focus:not(:focus-visible){outline:0}
+  .ct-462-panel .ct-462-col-right a:focus-visible{outline:2px solid #00703c;outline-offset:2px}
+  
+  .btn-462 {
+    background-color: #00703c !important;
+    color: #fff !important;
+    padding: 15px;
+    word-wrap: break-word;
+    white-space: normal;
+    padding: 10px 15px;
+  
+  }
+  
+  .btn-462:hover {
+    outline-color: #00703c;
+    transition: all 0.2s ease-in;
+      outline: 1px solid #555;
+    outline-offset: 3px;
+  
+  }  
+    
+    @media (max-width: 576px) {
+    section#program-section {
+      
+      padding: 0px;
+    }
+  }
+  </STYLE>
+  <!-- <t4 type="meta" meta="content_id" /> --> 
+  
+  
